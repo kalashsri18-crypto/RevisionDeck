@@ -55,7 +55,7 @@ The scheduling approach is a proposed learning aid, not a validated scientific a
 - [ ] Set up Flask application and SQLite schema
 - [ ] Implement deck and flashcard management
 - [ ] Build the review-session interface
-- [ ] Implement review scheduling
+- [x] Implement review scheduling
 - [ ] Add due-card and progress views
 - [ ] Write automated tests and add a sample deck
 - [ ] Add screenshots and deployment instructions
