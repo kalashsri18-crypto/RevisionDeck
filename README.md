@@ -1,37 +1,52 @@
 # RevisionDeck
+### Spaced-Repetition Flashcards for Smarter Revision
 
-A spaced-repetition flashcard app that schedules reviews, tracks recall quality, and prioritizes cards that are due.
+RevisionDeck is a flashcard learning project designed around spaced repetition. The goal is to help students revise actively, rate how well they remembered each answer, and prioritize cards that are due for review.
 
-## Status
+> **Repository description:** A spaced-repetition flashcard learning app concept for creating decks, reviewing cards, tracking recall, and scheduling revisions.
 
-Initial project scaffold. The application, tests, setup guide, and usage documentation are being added directly to the `main` branch.
+## Planned product features
+- Create and organize flashcard decks by subject
+- Add question-and-answer cards
+- Review cards using active recall
+- Rate recall quality after each card
+- Schedule the next review based on the recall rating
+- See due cards and basic learning progress
+- Store decks and review history persistently
 
-## Planned stack
-
+## Planned technology
 - Python 3.10+
-- Flask
-- SQLite (built-in Python database driver)
-- HTML, CSS, and vanilla JavaScript
-- pytest
+- Flask for the web application
+- SQLite for local persistence
+- HTML, CSS and vanilla JavaScript
+- pytest for automated tests
 
-## Run locally
-
-```bash
-python -m venv .venv
-# Windows: .venv\\Scripts\\activate
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-python app.py
+## Intended project structure
+```text
+.
+├── app.py
+├── requirements.txt
+├── templates/
+├── static/
+├── tests/
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
-Then open http://127.0.0.1:5000.
+## Development status
+**Planning / README scaffold.** The repository currently contains the project description; the application code, database models, tests, and setup files have not yet been added. Feature descriptions above are planned scope, not claims of implemented functionality.
 
-## Tests
+## Proposed review algorithm
+A review session should ask the learner to recall the answer before revealing it. The learner then rates recall (for example: Again, Hard, Good, or Easy). The app uses that rating and the previous review interval to calculate the next due date. This project is intended as a study aid, not a validated scientific assessment tool.
 
-```bash
-pytest
-```
+## Roadmap
+- [ ] Implement Flask application and SQLite schema
+- [ ] Add deck and flashcard CRUD
+- [ ] Implement review scheduling
+- [ ] Add due-card and progress views
+- [ ] Add automated tests and sample deck
+- [ ] Add screenshots and deployment instructions
 
 ## License
-
-MIT. See [LICENSE](LICENSE).
+See [LICENSE](LICENSE) if a license file is added to this repository.
